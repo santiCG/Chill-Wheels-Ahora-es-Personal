@@ -32,8 +32,8 @@ public class Piz_x_seg : MonoBehaviour
         }
     }
 
-    public void AumentarPiz_Seg(float nuevoValor)
+    public void AumentarPiz_Seg(float value)
     {
-        pizzas_seg = nuevoValor;
+        pizzas_seg += value;
     }
 }

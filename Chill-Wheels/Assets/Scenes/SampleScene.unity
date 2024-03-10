@@ -225,6 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fcc3cf128dc4b498fb18a10a730d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 0}
+  amountPizzas: {fileID: 0}
   descripcion: {fileID: 301059023}
 --- !u!50 &41497931
 Rigidbody2D:
@@ -3148,7 +3150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '100
+  m_text: '100 M
 
 '
   m_isRightToLeft: 0
@@ -3432,7 +3434,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 379124039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 379124041}
+        m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &379124039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3483,6 +3497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33004a688b5dc9443b49841e9f7769be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
   descripcion: {fileID: 1692196499}
 --- !u!1 &402249786
 GameObject:
@@ -4368,9 +4384,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '100
-
-'
+  m_text: ' 100 p/s'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -5510,6 +5524,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33004a688b5dc9443b49841e9f7769be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 0}
+  amountPizzas: {fileID: 0}
   descripcion: {fileID: 1846722606}
 --- !u!50 &654846760
 Rigidbody2D:
@@ -7882,6 +7898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a6ceb3761f0e545826634cc84738ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 0}
+  amountPizzas: {fileID: 0}
   descripcion: {fileID: 1373926389}
 --- !u!50 &931666086
 Rigidbody2D:
@@ -12847,7 +12865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -859, y: -60}
+  m_AnchoredPosition: {x: -764, y: -60}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1539754243
@@ -14112,6 +14130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b45a6479345d9b45aebda8dab1f3494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
   descripcion: {fileID: 1880644473}
 --- !u!50 &1701895984
 Rigidbody2D:
@@ -14228,7 +14248,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1701895987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1701895983}
+        m_TargetAssemblyTypeName: Casco, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1701895987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16139,7 +16171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037871994}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2037871996}
+        m_TargetAssemblyTypeName: Tabla_skate, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2037871994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16190,6 +16234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a6ceb3761f0e545826634cc84738ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
   descripcion: {fileID: 1880204967}
 --- !u!1 &2065657568
 GameObject:
@@ -16228,7 +16274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -430, y: -60}
+  m_AnchoredPosition: {x: -772, y: -204}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2065657570
@@ -16411,6 +16457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fcc3cf128dc4b498fb18a10a730d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
   descripcion: {fileID: 208671232}
 --- !u!50 &2070306693
 Rigidbody2D:
@@ -16527,7 +16575,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2070306696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2070306692}
+        m_TargetAssemblyTypeName: Tennis, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2070306696
 MonoBehaviour:
   m_ObjectHideFlags: 0

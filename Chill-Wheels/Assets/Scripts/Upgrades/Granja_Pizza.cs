@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class Granja_Pizza : MonoBehaviour
 {
+    [SerializeField] private Piz_x_seg pizzas_x_seg;
+    [SerializeField] private AmountPizzas amountPizzas;
+
+    // Produccion del horno
+    private float produccion = 3f;
+
+    //Costo
+    private int nivel = 1;
+    private float costo = 55f;
+
     public GameObject descripcion;
     //public GameObject Boton_normal;
     void Start()
@@ -25,15 +35,23 @@ public class Granja_Pizza : MonoBehaviour
         Debug.Log("salida mouse");
     }
 
-
-
-
-
     public void onClick()
     {
+        if (amountPizzas.Pizzas >= costo)
+        {
+            pizzas_x_seg.AumentarPiz_Seg(produccion);
 
-        //descripcion.SetActive(true);
-        //Boton_normal.SetActive(false);
-        Debug.Log("se detecto click");
+            produccion += Mathf.Sqrt(produccion);
+
+            amountPizzas.Pizzas -= costo;
+
+            costo = Mathf.Round(47 * Mathf.Pow(1.15f, nivel));
+
+            nivel++;
+        }
+        else
+        {
+            Debug.Log("No te alcanza");
+        }
     }
 }

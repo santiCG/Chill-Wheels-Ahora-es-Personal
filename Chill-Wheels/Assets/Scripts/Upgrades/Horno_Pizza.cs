@@ -12,7 +12,7 @@ public class Horno_Pizza : MonoBehaviour
 
     //Costo
     private int nivel = 1;
-    private float costo = 5f;
+    private float costo = 30f;
 
     public GameObject descripcion;
     //public GameObject Boton_normal;
@@ -47,7 +47,7 @@ public class Horno_Pizza : MonoBehaviour
 
             amountPizzas.Pizzas -= costo;
 
-            costo = nivel * 5;
+            costo = Mathf.Round(10 * Mathf.Pow(1.15f, nivel));
 
             nivel++;
         }

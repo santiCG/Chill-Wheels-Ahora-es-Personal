@@ -16,7 +16,7 @@ public class AmountPizzas : MonoBehaviour
 
     private void Update()
     {
-        _textMeshPro.text = pizzas.ToString("0");
+        _textMeshPro.text = pizzas.ToString("0") + "M";
     }
 
     public float Pizzas
