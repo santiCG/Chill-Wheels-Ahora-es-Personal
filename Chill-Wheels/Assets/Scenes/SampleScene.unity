@@ -754,8 +754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -118.5, y: 173.13}
-  m_SizeDelta: {x: 98.0642, y: 103.7331}
+  m_AnchoredPosition: {x: -33.2, y: 199.4}
+  m_SizeDelta: {x: 76.3872, y: 80.8029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &83743060
 Rigidbody2D:
@@ -816,7 +816,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11641693, y: -0.09841347}
+  m_Offset: {x: -0.80293274, y: -1.4714727}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -827,7 +827,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 74.10411, y: 54.35078}
+  m_Size: {x: 50.762154, y: 35.127983}
   m_EdgeRadius: 0
 --- !u!114 &83743063
 MonoBehaviour:
@@ -4182,8 +4182,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 402249787}
-  - {fileID: 83743059}
   - {fileID: 724384689}
+  - {fileID: 83743059}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9181,20 +9181,20 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.45
+  m_ScreenY: 0.79
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
+  m_SoftZoneWidth: 0.78
+  m_SoftZoneHeight: 2
+  m_BiasX: 0.08
   m_BiasY: 0
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
@@ -13235,23 +13235,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: far clip plane
-      value: 5000
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: near clip plane
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 4.62
       objectReference: {fileID: 0}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.7738442
+      value: 7.0886517
       objectReference: {fileID: 0}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4180648
+      value: 3.1243446
       objectReference: {fileID: 0}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16875,9 +16875,9 @@ MonoBehaviour:
   m_Follow: {fileID: 960646085}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 5
-    NearClipPlane: 0.1
-    FarClipPlane: 5000
+    OrthographicSize: 4.62
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -16901,7 +16901,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4169998, y: -2.9599998, z: -10}
+  m_LocalPosition: {x: -1.5958028, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16921,7 +16921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BoundingShape2D: {fileID: 459727721}
-  m_Damping: 0
+  m_Damping: 0.5
   m_MaxWindowSize: 0
 --- !u!1 &2102180088
 GameObject:
