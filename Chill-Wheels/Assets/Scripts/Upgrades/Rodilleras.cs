@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Casco : MonoBehaviour
+public class Rodilleras : MonoBehaviour
 {
     [SerializeField] private Piz_x_seg pizzas_x_seg;
     [SerializeField] private AmountPizzas amountPizzas;
 
     // Produccion del horno
-    private float produccion = 20f;
+    private float produccion = 50f;
 
     //Costo
     private int nivel = 1;
-    private float costo = 400f;
+    private float costo = 1150f;
 
     public GameObject descripcion;
     //public GameObject Boton_normal;
@@ -45,7 +45,7 @@ public class Casco : MonoBehaviour
 
             amountPizzas.Pizzas -= costo;
 
-            costo = Mathf.Round(347 * Mathf.Pow(1.15f, nivel));
+            costo = Mathf.Round(1000 * Mathf.Pow(1.15f, nivel));
 
             nivel++;
         }

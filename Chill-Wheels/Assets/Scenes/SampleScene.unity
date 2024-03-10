@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 41497933}
   - component: {fileID: 41497932}
   - component: {fileID: 41497931}
-  - component: {fileID: 41497930}
   - component: {fileID: 41497929}
+  - component: {fileID: 41497936}
   m_Layer: 5
   m_Name: Franquicia de pizzas
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 41497930}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Tennis, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -201,7 +201,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 41497930}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Tennis, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -213,21 +213,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &41497930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41497927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fcc3cf128dc4b498fb18a10a730d18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 301059023}
 --- !u!50 &41497931
 Rigidbody2D:
   serializedVersion: 4
@@ -343,7 +328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 41497934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 41497936}
+        m_TargetAssemblyTypeName: Franquicia, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &41497934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +379,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41497927}
   m_CullTransparentMesh: 1
+--- !u!114 &41497936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41497927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae48ca7a645e0ee41b93a2c0f1e4f568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 301059023}
 --- !u!1 &68744762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,8 +3255,8 @@ GameObject:
   - component: {fileID: 379124038}
   - component: {fileID: 379124037}
   - component: {fileID: 379124036}
-  - component: {fileID: 379124041}
   - component: {fileID: 379124034}
+  - component: {fileID: 379124041}
   m_Layer: 5
   m_Name: Granjas
   m_TagString: Untagged
@@ -3291,7 +3303,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 379124041}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -3307,7 +3319,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 379124041}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -4622,8 +4634,8 @@ GameObject:
   - component: {fileID: 541941764}
   - component: {fileID: 541941763}
   - component: {fileID: 541941762}
-  - component: {fileID: 541941761}
   - component: {fileID: 541941760}
+  - component: {fileID: 541941768}
   m_Layer: 5
   m_Name: Amuleto del pepperoni
   m_TagString: Untagged
@@ -4648,7 +4660,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 541941761}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -4664,7 +4676,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 541941761}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -4676,21 +4688,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &541941761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541941759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 2106763344}
 --- !u!50 &541941762
 Rigidbody2D:
   serializedVersion: 4
@@ -4806,7 +4803,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 541941765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 541941768}
+        m_TargetAssemblyTypeName: AmuletoPepperoni, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &541941765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4867,6 +4876,21 @@ RectTransform:
   m_AnchoredPosition: {x: -116.283615, y: 157.36145}
   m_SizeDelta: {x: 193.2283, y: 77.7762}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &541941768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541941759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8aa5304fd50c847ba58a522d1445e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 2106763344}
 --- !u!1 &556329593
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,8 +5460,8 @@ GameObject:
   - component: {fileID: 654846762}
   - component: {fileID: 654846761}
   - component: {fileID: 654846760}
-  - component: {fileID: 654846759}
   - component: {fileID: 654846758}
+  - component: {fileID: 654846765}
   m_Layer: 5
   m_Name: Rodilleras
   m_TagString: Untagged
@@ -5484,7 +5508,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 654846759}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -5500,7 +5524,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 654846759}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -5512,21 +5536,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &654846759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654846756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33004a688b5dc9443b49841e9f7769be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1846722606}
 --- !u!50 &654846760
 Rigidbody2D:
   serializedVersion: 4
@@ -5642,7 +5651,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654846763}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654846765}
+        m_TargetAssemblyTypeName: Rodilleras, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &654846763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5681,6 +5702,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654846756}
   m_CullTransparentMesh: 1
+--- !u!114 &654846765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654846756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6bc6a98b38cdcd47bff6911717a0332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 1846722606}
 --- !u!1 &679279551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6220,8 +6256,8 @@ GameObject:
   - component: {fileID: 755322573}
   - component: {fileID: 755322572}
   - component: {fileID: 755322571}
-  - component: {fileID: 755322570}
   - component: {fileID: 755322569}
+  - component: {fileID: 755322576}
   m_Layer: 5
   m_Name: Llantitas
   m_TagString: Untagged
@@ -6268,7 +6304,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 755322570}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -6284,7 +6320,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 755322570}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -6296,21 +6332,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &755322570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755322567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 970335405}
 --- !u!50 &755322571
 Rigidbody2D:
   serializedVersion: 4
@@ -6426,7 +6447,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 755322574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 755322576}
+        m_TargetAssemblyTypeName: Llantitas, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &755322574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6465,6 +6498,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755322567}
   m_CullTransparentMesh: 1
+--- !u!114 &755322576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755322567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf68b51a3fa369418ffdde4bef48b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 970335405}
 --- !u!1 &771441393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7757,45 +7805,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900159219}
   m_CullTransparentMesh: 1
---- !u!1 &923120494 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5375169917561111700, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-  m_PrefabInstance: {fileID: 1556877983}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &923120496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923120494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &931666082
 GameObject:
   m_ObjectHideFlags: 0
@@ -7810,8 +7819,8 @@ GameObject:
   - component: {fileID: 931666088}
   - component: {fileID: 931666087}
   - component: {fileID: 931666086}
-  - component: {fileID: 931666085}
   - component: {fileID: 931666084}
+  - component: {fileID: 931666091}
   m_Layer: 5
   m_Name: Italianos_Enojados
   m_TagString: Untagged
@@ -7858,7 +7867,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 931666085}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Tabla_skate, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -7874,7 +7883,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 931666085}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Tabla_skate, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -7886,21 +7895,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &931666085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931666082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a6ceb3761f0e545826634cc84738ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1373926389}
 --- !u!50 &931666086
 Rigidbody2D:
   serializedVersion: 4
@@ -8016,7 +8010,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 931666089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 931666091}
+        m_TargetAssemblyTypeName: ItalianoEnojado, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &931666089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8055,6 +8061,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931666082}
   m_CullTransparentMesh: 1
+--- !u!114 &931666091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931666082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d521772f4c6fed448b0b0b6d87090348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 1373926389}
 --- !u!1 &944170992
 GameObject:
   m_ObjectHideFlags: 0
@@ -13213,54 +13234,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 353115551963703374, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1813709187312697736, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_Name
       value: Prota
       objectReference: {fileID: 0}
     - target: {fileID: 2370628692990558419, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: speed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2370628692990558419, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: PuntajePizzas
       value: 
       objectReference: {fileID: 370228617}
-    - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: field of view
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: far clip plane
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: near clip plane
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4263680548095147275, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: orthographic size
-      value: 4.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.0886517
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.1243446
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.1547723
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.047
@@ -13304,10 +13285,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5375169917561111700, guid: 83728132019fa8d42838a7aee3269099, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 923120496}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83728132019fa8d42838a7aee3269099, type: 3}
 --- !u!1 &1608748123
 GameObject:
@@ -15645,8 +15623,8 @@ GameObject:
   - component: {fileID: 2001311198}
   - component: {fileID: 2001311197}
   - component: {fileID: 2001311196}
-  - component: {fileID: 2001311195}
   - component: {fileID: 2001311194}
+  - component: {fileID: 2001311201}
   m_Layer: 5
   m_Name: Coderas
   m_TagString: Untagged
@@ -15693,7 +15671,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2001311195}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -15709,7 +15687,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2001311195}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -15721,21 +15699,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2001311195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001311192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1351977264}
 --- !u!50 &2001311196
 Rigidbody2D:
   serializedVersion: 4
@@ -15851,7 +15814,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2001311199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2001311201}
+        m_TargetAssemblyTypeName: Coderas, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2001311199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15890,6 +15865,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001311192}
   m_CullTransparentMesh: 1
+--- !u!114 &2001311201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001311192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093cad47c2f012d4fb41d903e949df19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzas_x_seg: {fileID: 502613035}
+  amountPizzas: {fileID: 370228617}
+  descripcion: {fileID: 1351977264}
 --- !u!1 &2020213216
 GameObject:
   m_ObjectHideFlags: 0
@@ -16901,7 +16891,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5958028, y: -0.28039956, z: -10}
+  m_LocalPosition: {x: -1.5954475, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:

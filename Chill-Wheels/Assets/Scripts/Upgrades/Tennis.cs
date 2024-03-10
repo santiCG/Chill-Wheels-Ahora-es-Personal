@@ -12,7 +12,7 @@ public class Tennis : MonoBehaviour
 
     //Costo
     private int nivel = 1;
-    private float costo = 345f;
+    private float costo = 115f;
 
     public GameObject descripcion;
     //public GameObject Boton_normal;
