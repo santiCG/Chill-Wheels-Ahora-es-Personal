@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private AmountPizzas PuntajePizzas;
+
+    Animator animator;
 
     public float speed = 100f;
     public float JumpHeight;
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -28,6 +32,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(transform.position.y);
+
+        animator.SetFloat("y", transform.position.y);
+
+        animator.SetTrigger("Jump");
+
         Vector2 NoMovement = new Vector2(0f, 0f);
 
         rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
@@ -37,8 +47,16 @@ public class PlayerController : MonoBehaviour
             if (InAir == false)
             {
                 rb2d.AddForce(new Vector2(0, JumpHeight * 1.5f), ForceMode2D.Impulse);
+
+                //StartCoroutine(EsperarUnSegundo());
             }
         }
+    }
+
+    private IEnumerator EsperarUnSegundo()
+    {
+        yield return new WaitForSeconds(0.2f);
+
     }
 
     public void ContadorPizzas(float amount)
