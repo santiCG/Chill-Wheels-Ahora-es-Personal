@@ -7,7 +7,7 @@ public class Piz_x_seg : MonoBehaviour
 {
     [SerializeField] private AmountPizzas PuntajePizzas;
 
-    private float pizzas_seg;
+    public float pizzas_seg;
 
     private TextMeshProUGUI _textMeshPro;
 

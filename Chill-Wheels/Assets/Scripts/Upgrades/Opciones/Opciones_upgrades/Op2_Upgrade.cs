@@ -12,27 +12,15 @@ public class Op2_Upgrade : MonoBehaviour
     public GameObject Boton_Seleccionado2;
 
 
-    public GameObject Iman_pizzas;
+    public GameObject Pizzi_Prime;
     public GameObject Patineta_Rapida;
+    public GameObject Iman_pizzas;
     public GameObject Pinkbull;
-    public GameObject Guepardex;
     public GameObject Harina_Pan;
 
     public GameObject Corazon_Mario;
-    public GameObject Pizzi_Prime;
+    public GameObject Guepardex;
 
-
-
-    //void Start()
-    //{
-    //    Boton_Seleccionado1.SetActive(false);
-    //    Boton_Seleccionado2.SetActive(true);
-
-    //    Boton_normal1.SetActive(true);
-    //    Boton_normal2.SetActive(false);
-
-    //    Debug.Log("AAA");
-    //}
 
 
 
@@ -61,14 +49,14 @@ public class Op2_Upgrade : MonoBehaviour
 
 
 
-        Iman_pizzas.SetActive(false);
+        Pizzi_Prime.SetActive(false);
         Patineta_Rapida.SetActive(false);
+        Iman_pizzas.SetActive(false);
         Pinkbull.SetActive(false);
-        Guepardex.SetActive(false);
         Harina_Pan.SetActive(false);
 
         Corazon_Mario.SetActive(true);
-        Pizzi_Prime.SetActive(true);
+        Guepardex.SetActive(true);
 
 
 
