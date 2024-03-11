@@ -662,7 +662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3310e09e013677448062317facb9420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountPizzas: {fileID: 370228617}
+  playerController: {fileID: 960646088}
   descripcion: {fileID: 782866975}
+  nuevaVelocidad: 14
 --- !u!1 &78250459
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,7 +13330,7 @@ PrefabInstance:
       objectReference: {fileID: 370228617}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.0883756
+      value: 7.088305
       objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17000,7 +17003,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5960321, y: -0.28039956, z: -10}
+  m_LocalPosition: {x: -1.5960908, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:

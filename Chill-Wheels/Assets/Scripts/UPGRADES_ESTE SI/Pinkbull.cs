@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Pinkbull : MonoBehaviour
 {
+    [SerializeField] private AmountPizzas amountPizzas;
+    public PlayerController playerController;
+
     public GameObject descripcion;
-    //public GameObject Boton_normal;
+    public float nuevaVelocidad;
+    private float costo = 2000f;
+
+
     void Start()
     {
         descripcion.SetActive(false);
@@ -25,7 +31,23 @@ public class Pinkbull : MonoBehaviour
 
     public void onClick()
     {
-        Debug.Log("aqui va la accion de click");
+
+        if (amountPizzas.Pizzas >= costo)
+        {
+
+            if (playerController != null)
+            {
+                playerController.speed = nuevaVelocidad;
+                Debug.Log("velocidad modificada a:" + nuevaVelocidad);
+
+            }
+        }
+
+        else
+        {
+            Debug.Log("No tiene suficientes pizzas, necesarias: " + costo);
+        }
+
 
 
     }
