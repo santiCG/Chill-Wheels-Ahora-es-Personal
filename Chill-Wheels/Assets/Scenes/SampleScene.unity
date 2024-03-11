@@ -12036,6 +12036,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644211af914bf444a8873a28217dc92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountPizzas: {fileID: 370228617}
+  pizzasPorSegundo: {fileID: 502613035}
+  playerController: {fileID: 960646088}
   descripcion: {fileID: 1441900408}
 --- !u!1 &1468132407
 GameObject:
@@ -13346,7 +13349,7 @@ PrefabInstance:
       objectReference: {fileID: 370228617}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.0887747
+      value: 7.0885096
       objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17019,7 +17022,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5957003, y: -0.28039956, z: -10}
+  m_LocalPosition: {x: -1.5959206, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:
