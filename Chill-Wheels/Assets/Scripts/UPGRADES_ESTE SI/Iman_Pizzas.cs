@@ -11,7 +11,7 @@ public class Iman_Pizzas : MonoBehaviour
     public PlayerController playerController;
     private BoxCollider2D boxCollider;
 
-    private float costo = 1f;
+    private float costo = 575f;
     //public GameObject Boton_normal;
     void Start()
     {

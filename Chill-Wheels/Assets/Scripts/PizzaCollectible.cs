@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PizzaCollectible : MonoBehaviour
 {
-    [SerializeField] private float cantidadPizzas;
+    [SerializeField] public float cantidadPizzas;
 
     void OnTriggerEnter2D(Collider2D other)
     {

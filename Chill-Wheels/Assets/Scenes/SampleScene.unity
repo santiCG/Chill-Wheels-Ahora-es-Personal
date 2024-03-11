@@ -15743,6 +15743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166e35d99b191f241a7ebbd6071f4aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzaCollectible1: {fileID: 0}
+  pizzaCollectible2: {fileID: 0}
+  amountPizzas: {fileID: 370228617}
   descripcion: {fileID: 2020213216}
 --- !u!1 &1943944882
 GameObject:
