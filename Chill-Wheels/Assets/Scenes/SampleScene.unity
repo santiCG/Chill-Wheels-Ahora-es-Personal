@@ -185,8 +185,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Tennis, Assembly-CSharp
+        - m_Target: {fileID: 41497936}
+          m_TargetAssemblyTypeName: Franquicia, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -201,8 +201,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Tennis, Assembly-CSharp
+        - m_Target: {fileID: 41497936}
+          m_TargetAssemblyTypeName: Franquicia, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 68744768}
   - component: {fileID: 68744767}
   - component: {fileID: 68744766}
-  - component: {fileID: 68744765}
+  - component: {fileID: 68744771}
   - component: {fileID: 68744764}
   m_Layer: 5
   m_Name: Pinkbull
@@ -436,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 28.90001}
+  m_AnchoredPosition: {x: 110, y: -38.887993}
   m_SizeDelta: {x: 193.2283, y: 77.7762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68744764
@@ -456,8 +456,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 68744765}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 68744771}
+          m_TargetAssemblyTypeName: Pinkbull, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -472,8 +472,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 68744765}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 68744771}
+          m_TargetAssemblyTypeName: Pinkbull, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -484,21 +484,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &68744765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68744762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 782866975}
 --- !u!50 &68744766
 Rigidbody2D:
   serializedVersion: 4
@@ -614,7 +599,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68744769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 68744771}
+        m_TargetAssemblyTypeName: Pinkbull, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &68744769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,6 +650,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68744762}
   m_CullTransparentMesh: 1
+--- !u!114 &68744771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68744762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3310e09e013677448062317facb9420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 782866975}
 --- !u!1 &78250459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,10 +1218,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Aumenta la cantidad de pizzas obtenidas por pizza recojida                                 
-    (+2 pizzas / item)
+  m_text: 'Aumenta la cantidad de pizzas obtenidas por pizza recojida (+2 pizzas
+    / item)
 
-'
+    COSTO:299p'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2020,7 +2030,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Aumenta la velocidad de movimiento (20 seg)
 
-'
+    COSTO: 345p'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2156,6 +2166,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Invoca 30 minutos de produccion de p/s instantaneamente
 
+    COSTO: 10,000p
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2290,7 +2302,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Que la suerte est\xE9 siempre de tu lado!\nM\xE1s +1000 p/s\r\n"
+  m_text: "Que la suerte est\xE9 siempre de tu lado!\nM\xE1s +1000 p/s\r\nCOSTO:
+    57,500p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2496,13 +2509,13 @@ MonoBehaviour:
   Boton_normal2: {fileID: 2102180088}
   Boton_Seleccionado1: {fileID: 856236517}
   Boton_Seleccionado2: {fileID: 235799404}
-  Iman_pizzas: {fileID: 1805937481}
+  Pizzi_Prime: {fileID: 874290953}
   Patineta_Rapida: {fileID: 1550988042}
+  Iman_pizzas: {fileID: 1805937481}
   Pinkbull: {fileID: 68744762}
-  Guepardex: {fileID: 1507831886}
   Harina_Pan: {fileID: 1449455673}
   Corazon_Mario: {fileID: 1912577076}
-  Pizzi_Prime: {fileID: 874290953}
+  Guepardex: {fileID: 1507831886}
 --- !u!114 &279085322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2654,7 +2667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ten estilo y mejora tu agarre!\nM\xE1s +5 p/s\r\n"
+  m_text: "Ten estilo y mejora tu agarre!\nM\xE1s +5 p/s\r\nCOSTO: 115p"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3303,7 +3316,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 379124041}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
@@ -3319,7 +3332,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 379124041}
           m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
@@ -3390,7 +3403,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0148468, y: -7.001905}
+  m_Offset: {x: 1.0148468, y: -6.8092957}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3401,7 +3414,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 176.48947, y: 40.54015}
+  m_Size: {x: 176.48947, y: 34.761604}
   m_EdgeRadius: 0
 --- !u!114 &379124038
 MonoBehaviour:
@@ -3866,7 +3879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFLe echaste pi\xF1a a la pizza?\nM\xE1s +200 p/s\r\n"
+  m_text: "\xBFLe echaste pi\xF1a a la pizza?\nM\xE1s +200 p/s\nCOSTO: 9,200p"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4261,7 +4274,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Rodilleras: porque cada paso cuenta, \xA1y tus rodillas merecen un paseo
-    suave como una nube!\nM\xE1s +50 p/s\r\n"
+    suave como una nube!\nM\xE1s +50 p/s\r\nCOSTO: 1,150p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4660,8 +4673,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 541941768}
+          m_TargetAssemblyTypeName: AmuletoPepperoni, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -4676,8 +4689,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 541941768}
+          m_TargetAssemblyTypeName: AmuletoPepperoni, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -5101,6 +5114,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'El valor de las pizzas se triplica por 1 minuto
 
+    COSTO: 8,000p
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5369,7 +5384,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "La proteccion  siempre es buena ;)\nM\xE1s +20 p/s\r\n"
+  m_text: "La proteccion  siempre es buena ;)\nM\xE1s +20 p/s\nCOSTO: 400p"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5508,8 +5523,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 654846765}
+          m_TargetAssemblyTypeName: Rodilleras, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -5524,8 +5539,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Granja_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 654846765}
+          m_TargetAssemblyTypeName: Rodilleras, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -5833,12 +5848,12 @@ RectTransform:
   - {fileID: 1701895981}
   - {fileID: 755322568}
   - {fileID: 1211575239}
+  - {fileID: 1507831887}
   - {fileID: 1550988043}
   - {fileID: 1912577077}
   - {fileID: 1805937482}
   - {fileID: 874290954}
   - {fileID: 68744763}
-  - {fileID: 1507831887}
   - {fileID: 1449455674}
   - {fileID: 1481315208}
   - {fileID: 856236524}
@@ -5954,7 +5969,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Duplica las p/s por un minuto
+  m_text: 'Duplica las p/s por un minuto
+
+    COSTO: 5,000p'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6304,8 +6321,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 755322576}
+          m_TargetAssemblyTypeName: Llantitas, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -6320,8 +6337,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 755322576}
+          m_TargetAssemblyTypeName: Llantitas, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -7320,7 +7337,7 @@ GameObject:
   - component: {fileID: 874290959}
   - component: {fileID: 874290958}
   - component: {fileID: 874290957}
-  - component: {fileID: 874290956}
+  - component: {fileID: 874290962}
   - component: {fileID: 874290955}
   m_Layer: 5
   m_Name: Pizzi_Prime
@@ -7348,7 +7365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 92.20003}
+  m_AnchoredPosition: {x: 110, y: 157.36}
   m_SizeDelta: {x: 193.2283, y: 77.7762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874290955
@@ -7368,8 +7385,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 874290956}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 874290962}
+          m_TargetAssemblyTypeName: Pizzi_Prime, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -7384,8 +7401,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 874290956}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 874290962}
+          m_TargetAssemblyTypeName: Pizzi_Prime, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -7396,21 +7413,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &874290956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874290953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1971974045}
 --- !u!50 &874290957
 Rigidbody2D:
   serializedVersion: 4
@@ -7526,7 +7528,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 874290960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 874290962}
+        m_TargetAssemblyTypeName: Pizzi_Prime, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &874290960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7565,6 +7579,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874290953}
   m_CullTransparentMesh: 1
+--- !u!114 &874290962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874290953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c96dae807b00a147ac44ef253cd8226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 1971974045}
 --- !u!1 &900159219
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,8 +7894,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Tabla_skate, Assembly-CSharp
+        - m_Target: {fileID: 931666091}
+          m_TargetAssemblyTypeName: ItalianoEnojado, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -7883,8 +7910,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Tabla_skate, Assembly-CSharp
+        - m_Target: {fileID: 931666091}
+          m_TargetAssemblyTypeName: ItalianoEnojado, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -8423,7 +8450,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Granja de pizzas, cultiva todas las que puedas!\nM\xE1s +3 p/s\r\n"
+  m_text: "Granja de pizzas, cultiva todas las que puedas!\nM\xE1s +3 p/s\r\nCOSTO:
+    55p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8701,7 +8729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\rHorno de pizza, increiblemente necesario para generar pizzas!\nM\xE1s
-    +1 p/s\r\n"
+    +1 p/s\r\nCOSTO: 30p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9076,7 +9104,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: " \xA1El camino m\xE1s delicioso hacia la satisfacci\xF3n!\nM\xE1s +100
-    p/s\r\n"
+    p/s\r\nCOSTO: 3,450p"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10269,6 +10297,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Aumenta la velocidad de forma permanente (VALOR A CONFIRMAR)
+
+    COSTO:
+    2,000p
 
 '
   m_isRightToLeft: 0
@@ -11736,7 +11767,7 @@ GameObject:
   - component: {fileID: 1449455679}
   - component: {fileID: 1449455678}
   - component: {fileID: 1449455677}
-  - component: {fileID: 1449455676}
+  - component: {fileID: 1449455682}
   - component: {fileID: 1449455675}
   m_Layer: 5
   m_Name: Harina_Pan
@@ -11784,8 +11815,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1449455676}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1449455682}
+          m_TargetAssemblyTypeName: Harina_Pan, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -11800,8 +11831,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1449455676}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1449455682}
+          m_TargetAssemblyTypeName: Harina_Pan, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -11812,21 +11843,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1449455676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449455673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1441900408}
 --- !u!50 &1449455677
 Rigidbody2D:
   serializedVersion: 4
@@ -11942,7 +11958,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1449455680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1449455682}
+        m_TargetAssemblyTypeName: Harina_Pan, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1449455680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11981,6 +12009,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449455673}
   m_CullTransparentMesh: 1
+--- !u!114 &1449455682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449455673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644211af914bf444a8873a28217dc92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 1441900408}
 --- !u!1 &1468132407
 GameObject:
   m_ObjectHideFlags: 0
@@ -12482,7 +12523,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Atrae pizzas cercanas!
+  m_text: 'Atrae pizzas cercanas!
+
+    COSTO: 575p'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12604,7 +12647,7 @@ GameObject:
   - component: {fileID: 1507831892}
   - component: {fileID: 1507831891}
   - component: {fileID: 1507831890}
-  - component: {fileID: 1507831889}
+  - component: {fileID: 1507831895}
   - component: {fileID: 1507831888}
   m_Layer: 5
   m_Name: Guepardex
@@ -12632,7 +12675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: -38.888}
+  m_AnchoredPosition: {x: 106.61, y: 92.2}
   m_SizeDelta: {x: 193.2283, y: 77.7762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507831888
@@ -12652,8 +12695,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1507831889}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1507831895}
+          m_TargetAssemblyTypeName: Guepardex, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -12668,8 +12711,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1507831889}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1507831895}
+          m_TargetAssemblyTypeName: Guepardex, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -12680,21 +12723,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1507831889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507831886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 578163888}
 --- !u!50 &1507831890
 Rigidbody2D:
   serializedVersion: 4
@@ -12849,6 +12877,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507831886}
   m_CullTransparentMesh: 1
+--- !u!114 &1507831895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507831886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f16cd8073ddd347963729df1a82e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 578163888}
 --- !u!1 &1539754241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12981,7 +13022,7 @@ GameObject:
   - component: {fileID: 1550988048}
   - component: {fileID: 1550988047}
   - component: {fileID: 1550988046}
-  - component: {fileID: 1550988045}
+  - component: {fileID: 1550988051}
   - component: {fileID: 1550988044}
   m_Layer: 5
   m_Name: "Patineta_r\xE1pida"
@@ -13029,8 +13070,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1550988045}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1550988051}
+          m_TargetAssemblyTypeName: Patineta_Rapida, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -13045,8 +13086,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1550988045}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1550988051}
+          m_TargetAssemblyTypeName: Patineta_Rapida, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -13057,21 +13098,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1550988045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550988042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 300804891}
 --- !u!50 &1550988046
 Rigidbody2D:
   serializedVersion: 4
@@ -13187,7 +13213,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1550988049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1550988051}
+        m_TargetAssemblyTypeName: Patineta_Rapida, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550988049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13226,6 +13264,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550988042}
   m_CullTransparentMesh: 1
+--- !u!114 &1550988051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550988042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d143f0981596f7643b45744e817e980a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 300804891}
 --- !u!1001 &1556877983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13256,7 +13307,7 @@ PrefabInstance:
       objectReference: {fileID: 370228617}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.0892067
+      value: 7.0893836
       objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13361,7 +13412,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Coderas: porque tus codos tambi\xE9n merecen amor y protecci\xF3n. +35
-    p/s\r\n"
+    p/s\r\nCOSTO: 805p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14350,7 +14401,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aumenta el valor de las pizzas doradas (50%)
+  m_text: 'Aumenta el valor de las pizzas doradas (50%)
+
+    COSTO: 58p'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14544,7 +14597,7 @@ GameObject:
   - component: {fileID: 1805937487}
   - component: {fileID: 1805937486}
   - component: {fileID: 1805937485}
-  - component: {fileID: 1805937484}
+  - component: {fileID: 1805937490}
   - component: {fileID: 1805937483}
   m_Layer: 5
   m_Name: "Im\xE1n_Pizzas"
@@ -14572,7 +14625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 157.36}
+  m_AnchoredPosition: {x: 110, y: 28.9}
   m_SizeDelta: {x: 193.2283, y: 77.7762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805937483
@@ -14592,8 +14645,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1805937484}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1805937490}
+          m_TargetAssemblyTypeName: Iman_Pizzas, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -14608,8 +14661,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1805937484}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1805937490}
+          m_TargetAssemblyTypeName: Iman_Pizzas, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -14620,21 +14673,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1805937484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805937481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 1379312641}
 --- !u!50 &1805937485
 Rigidbody2D:
   serializedVersion: 4
@@ -14750,7 +14788,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1805937488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1805937490}
+        m_TargetAssemblyTypeName: Iman_Pizzas, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1805937488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14789,6 +14839,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805937481}
   m_CullTransparentMesh: 1
+--- !u!114 &1805937490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805937481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9148dedd6a96c9c42b929663d0e36145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 1379312641}
 --- !u!1 &1826444362
 GameObject:
   m_ObjectHideFlags: 0
@@ -15168,7 +15231,7 @@ GameObject:
   - component: {fileID: 1912577082}
   - component: {fileID: 1912577081}
   - component: {fileID: 1912577080}
-  - component: {fileID: 1912577079}
+  - component: {fileID: 1912577085}
   - component: {fileID: 1912577078}
   m_Layer: 5
   m_Name: Corazon_Mario
@@ -15216,8 +15279,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1912577079}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1912577085}
+          m_TargetAssemblyTypeName: Corazon_Mario, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -15232,8 +15295,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1912577079}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 1912577085}
+          m_TargetAssemblyTypeName: Corazon_Mario, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -15244,21 +15307,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1912577079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912577076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4da4acfb3df5748b2bdefe654d2282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pizzas_x_seg: {fileID: 0}
-  amountPizzas: {fileID: 0}
-  descripcion: {fileID: 2020213216}
 --- !u!50 &1912577080
 Rigidbody2D:
   serializedVersion: 4
@@ -15374,7 +15422,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1912577083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1912577085}
+        m_TargetAssemblyTypeName: Corazon_Mario, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1912577083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15413,6 +15473,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912577076}
   m_CullTransparentMesh: 1
+--- !u!114 &1912577085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912577076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166e35d99b191f241a7ebbd6071f4aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descripcion: {fileID: 2020213216}
 --- !u!1 &1943944882
 GameObject:
   m_ObjectHideFlags: 0
@@ -15687,8 +15760,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 2001311201}
+          m_TargetAssemblyTypeName: Coderas, Assembly-CSharp
           m_MethodName: OnMouseOver
           m_Mode: 1
           m_Arguments:
@@ -15703,8 +15776,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Horno_Pizza, Assembly-CSharp
+        - m_Target: {fileID: 2001311201}
+          m_TargetAssemblyTypeName: Coderas, Assembly-CSharp
           m_MethodName: OnMouseExit
           m_Mode: 1
           m_Arguments:
@@ -16764,7 +16837,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Necesitas al menos una!\nM\xE1s +10 p/s\r\n"
+  m_text: "Necesitas al menos una!\nM\xE1s +10 p/s\r\nCOSTO: 200p\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16907,7 +16980,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5953412, y: -0.28039956, z: -10}
+  m_LocalPosition: {x: -1.5951943, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17198,13 +17271,13 @@ MonoBehaviour:
   Boton_normal2: {fileID: 2102180088}
   Boton_Seleccionado1: {fileID: 856236517}
   Boton_Seleccionado2: {fileID: 235799404}
-  Iman_pizzas: {fileID: 1805937481}
+  Pizzi_Prime: {fileID: 874290953}
   Patineta_Rapida: {fileID: 1550988042}
+  Iman_pizzas: {fileID: 1805937481}
   Pinkbull: {fileID: 68744762}
-  Guepardex: {fileID: 1507831886}
   Harina_Pan: {fileID: 1449455673}
   Corazon_Mario: {fileID: 1912577076}
-  Pizzi_Prime: {fileID: 874290953}
+  Guepardex: {fileID: 1507831886}
 --- !u!1 &2106763344
 GameObject:
   m_ObjectHideFlags: 0
