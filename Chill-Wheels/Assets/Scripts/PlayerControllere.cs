@@ -32,8 +32,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform.position.y);
-
         animator.SetFloat("y", transform.position.y);
 
         animator.SetTrigger("Jump");
