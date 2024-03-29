@@ -91,7 +91,7 @@ public class Llantitas : MonoBehaviour
 
     private void ActualizarTextoDescripcion()
     {
-        descripcionText.text = "Necesitas al menos una!\nProducción: + " + produccion.ToString() + "p/s"; // Actualiza el texto de la descripción
+        descripcionText.text = "Rueda suavemente!\nProducción: + " + produccion.ToString() + "p/s"; // Actualiza el texto de la descripción
     }
 
     private void ActualizarColorFondo()
