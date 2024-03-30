@@ -18,6 +18,8 @@ public class Iman_Pizzas : MonoBehaviour
     public PlayerController playerController;
     private BoxCollider2D boxCollider;
 
+    private bool comprado;
+
     public float costo = 575f;
 
     private int nivel = 0;
@@ -57,9 +59,10 @@ public class Iman_Pizzas : MonoBehaviour
         {
             backgroundImage.color = Color.red;
         }
-
-
-        ActualizarColorFondo(); // Llama a la función de actualización de color de fondo en cada fotograma
+        else
+        {
+            ActualizarColorFondo(); // Llama a la función de actualización de color de fondo en cada fotograma
+        }
     }
 
     public void OnMouseOver()
@@ -83,6 +86,7 @@ public class Iman_Pizzas : MonoBehaviour
         if (amountPizzas.Pizzas >= costo && nivel == 0)
         {
             nivel++;
+
             if (jugador != null && playerController != null && boxCollider != null)
             {
                 // Activar el BoxCollider2D del jugador al hacer clic
@@ -93,16 +97,7 @@ public class Iman_Pizzas : MonoBehaviour
             {
                 Debug.LogWarning("GameObject del jugador, PlayerController o BoxCollider2D no asignado en iman_pizzas.");
             }
-
-
-
         }
-        else
-        {
-            backgroundImage.color = Color.red;
-            Debug.Log("No tiene suficientes pizzas, necesarias: " + costo);
-        }
-
     }
 
     private void ActualizarTextoCosto()

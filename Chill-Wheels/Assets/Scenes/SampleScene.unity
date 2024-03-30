@@ -2980,15 +2980,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec06512f2c453f4b835e3e76e05d6be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boton_normal1: {fileID: 279085317}
-  Boton_normal2: {fileID: 2102180088}
-  Boton_Seleccionado1: {fileID: 856236517}
-  Boton_Seleccionado2: {fileID: 235799404}
-  Patineta_Rapida: {fileID: 1550988042}
-  Iman_pizzas: {fileID: 1805937481}
-  Pinkbull: {fileID: 68744762}
-  Harina_Pan: {fileID: 1449455673}
-  Guepardex: {fileID: 1507831886}
 --- !u!114 &279085322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13922,9 +13913,9 @@ MonoBehaviour:
   - {fileID: 9134974135835772429, guid: 63ec46e80260d084fa9ace46665e3e64, type: 3}
   - {fileID: 9134974135835772429, guid: 3078116c45943094da2d255f571826d7, type: 3}
   - {fileID: 9134974135835772429, guid: 97b520d59347397419b0821787d3185b, type: 3}
-  distanciaMinima: 30
+  distanciaMinima: 10
   puntoFinal: {fileID: 1497878056}
-  cantidadInicial: 4
+  cantidadInicial: 1000
 --- !u!4 &1470081291
 Transform:
   m_ObjectHideFlags: 0
@@ -15286,7 +15277,6 @@ MonoBehaviour:
   backgroundImage: {fileID: 1550988049}
   playerController: {fileID: 960646088}
   nuevaVelocidad: 15
-  duracionCambioVelocidad: 20
   velocidadOriginal: 7
   costo: 345
 --- !u!1001 &1556877983
@@ -15323,11 +15313,15 @@ PrefabInstance:
       objectReference: {fileID: 370228617}
     - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.088637
+      value: 7.6472473
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854472106019823630, guid: 83728132019fa8d42838a7aee3269099, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1248338
       objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.047
+      value: -8.33
       objectReference: {fileID: 0}
     - target: {fileID: 6920077127993414295, guid: 83728132019fa8d42838a7aee3269099, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19289,7 +19283,7 @@ Transform:
   m_GameObject: {fileID: 2101877549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5958147, y: -0.28039956, z: -10}
+  m_LocalPosition: {x: -2.8784962, y: -0.28039956, z: -10}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19576,15 +19570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd1316b69614c14fb558591db624e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boton_normal1: {fileID: 279085317}
-  Boton_normal2: {fileID: 2102180088}
-  Boton_Seleccionado1: {fileID: 856236517}
-  Boton_Seleccionado2: {fileID: 235799404}
-  Patineta_Rapida: {fileID: 1550988042}
-  Iman_pizzas: {fileID: 1805937481}
-  Pinkbull: {fileID: 68744762}
-  Harina_Pan: {fileID: 1449455673}
-  Guepardex: {fileID: 1507831886}
 --- !u!1 &2106763344
 GameObject:
   m_ObjectHideFlags: 0

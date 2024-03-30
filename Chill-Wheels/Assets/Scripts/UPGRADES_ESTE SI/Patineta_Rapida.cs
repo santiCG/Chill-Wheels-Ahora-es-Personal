@@ -16,11 +16,9 @@ public class Patineta_Rapida : MonoBehaviour
 
     public PlayerController playerController;
     public float nuevaVelocidad;
-    public float duracionCambioVelocidad = 5f;
     public float velocidadOriginal;
 
-
-
+    private bool usandoPatineta;
 
     //public GameObject descripcion;
     public float costo = 345f;
@@ -36,7 +34,14 @@ public class Patineta_Rapida : MonoBehaviour
 
     void Update()
     {
-        ActualizarColorFondo(); // Llama a la función de actualización de color de fondo en cada fotograma
+        if (usandoPatineta)
+        {
+            backgroundImage.color = Color.red;
+        }
+        else
+        {
+            ActualizarColorFondo(); // Llama a la función de actualización de color de fondo en cada fotograma
+        }
     }
     public void OnMouseOver()
     {
@@ -81,15 +86,17 @@ public class Patineta_Rapida : MonoBehaviour
 
     IEnumerator CambiarVelocidadTemporal()
     {
-        //backgroundImage.color = Color.red;
+        usandoPatineta = true;
 
         velocidadOriginal = playerController.speed; // Guardar la velocidad original
 
         playerController.speed = nuevaVelocidad; // Cambiar a la nueva velocidad
 
-        yield return new WaitForSeconds(duracionCambioVelocidad); // Esperar el tiempo especificado
+        yield return new WaitForSeconds(20); // Esperar el tiempo especificado
 
         playerController.speed = velocidadOriginal; // Restaurar la velocidad original
+
+        usandoPatineta = false;
     }
 
     private void ActualizarTextoCosto()
